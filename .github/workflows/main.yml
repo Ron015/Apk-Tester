@@ -1,49 +1,53 @@
-name: Download & Extract APK (Dynamic URL + Folder)
+name: APK Downloader Fixed
 
 on:
   workflow_dispatch:
     inputs:
       apk_url:
-        description: "Enter APK Download URL"
+        description: "APK URL"
         required: true
       output_folder:
-        description: "Enter Output Folder Name"
+        description: "Output Folder"
         required: true
-        default: "files"
+        default: "output"
 
 jobs:
-  update:
+  run:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout repo
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      # Checkout repo
+      - uses: actions/checkout@v4
 
-      # 2️⃣ Download APK
+      # Download APK (FIXED 🔥)
       - name: Download APK
         run: |
-          echo "Downloading from: ${{ github.event.inputs.apk_url }}"
-          curl -L "${{ github.event.inputs.apk_url }}" -o app.apk
+          URL="${{ github.event.inputs.apk_url }}"
+          echo "Downloading: $URL"
 
-      # 3️⃣ Extract APK
+          curl -L \
+          -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" \
+          "$URL" -o app.apk
+
+      # Extract APK
       - name: Extract APK
         run: |
           mkdir -p extracted
           unzip -o app.apk -d extracted
 
-      # 4️⃣ Move files to selected folder
-      - name: Copy to output folder
+      # Move to output folder
+      - name: Move Files
         run: |
-          mkdir -p "${{ github.event.inputs.output_folder }}"
-          cp -r extracted/* "${{ github.event.inputs.output_folder }}/"
+          OUT="${{ github.event.inputs.output_folder }}"
+          mkdir -p "$OUT"
+          cp -r extracted/* "$OUT/"
 
-      # 5️⃣ Commit & push
-      - name: Commit & Push
+      # Commit & Push
+      - name: Push Changes
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
 
           git add .
-          git commit -m "Updated APK in ${{ github.event.inputs.output_folder }}" || echo "No changes"
+          git commit -m "Updated APK files" || echo "No changes"
           git push
