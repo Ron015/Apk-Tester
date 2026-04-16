@@ -1,5 +1,6 @@
 name: APK Downloader Fixed
-
+permissions:
+  contents: write
 on:
   workflow_dispatch:
     inputs:
