@@ -1,6 +1,5 @@
-name: APK Downloader Fixed
-permissions:
-  contents: write
+name: APK Extract Safe (99MB Limit)
+
 on:
   workflow_dispatch:
     inputs:
@@ -12,43 +11,56 @@ on:
         required: true
         default: "output"
 
+permissions:
+  contents: write
+
 jobs:
   run:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout repo
+      # 1️⃣ Checkout repo
       - uses: actions/checkout@v4
 
-      # Download APK (FIXED 🔥)
+      # 2️⃣ Download APK
       - name: Download APK
         run: |
           URL="${{ github.event.inputs.apk_url }}"
           echo "Downloading: $URL"
 
-          curl -L \
-          -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" \
+          curl -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" \
           "$URL" -o app.apk
 
-      # Extract APK
+      # 3️⃣ Extract APK
       - name: Extract APK
         run: |
           mkdir -p extracted
           unzip -o app.apk -d extracted
 
-      # Move to output folder
+      # 4️⃣ Remove large files (>99MB) 🔥
+      - name: Remove large files
+        run: |
+          echo "Cleaning large files..."
+
+          # delete original APK
+          rm -f app.apk
+
+          # delete files bigger than 99MB
+          find extracted -type f -size +99M -delete
+
+      # 5️⃣ Move files
       - name: Move Files
         run: |
           OUT="${{ github.event.inputs.output_folder }}"
           mkdir -p "$OUT"
           cp -r extracted/* "$OUT/"
 
-      # Commit & Push
-      - name: Push Changes
+      # 6️⃣ Commit & Push
+      - name: Commit & Push
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
 
           git add .
-          git commit -m "Updated APK files" || echo "No changes"
+          git commit -m "Updated APK extracted (99MB safe)" || echo "No changes"
           git push
