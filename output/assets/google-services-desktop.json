@@ -1,0 +1,31 @@
+{
+  "project_info": {
+    "project_number": "1054385977485",
+    "project_id": "x-survive",
+    "storage_bucket": "x-survive.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054385977485:ios:7bd836039248b095584ac4",
+        "android_client_info": {
+          "package_name": "com.freesquaregames.xsurvive"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmvey9WKmYO4328ewEd4EaM999WJbHues"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 0
+        },
+        "appinvite_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
