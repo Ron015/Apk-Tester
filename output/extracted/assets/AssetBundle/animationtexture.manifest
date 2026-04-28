@@ -1,0 +1,38 @@
+ManifestFileVersion: 0
+CRC: 2432985750
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a32f1046da9945feb2506a40e047eebe
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: a32f1046da9945feb2506a40e047eebe
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AnimationTexture/3D_CHA_Mob_Coin_MESH.bytes
+- Assets/AnimationTexture/3D_MobNinja_ANIM.bytes
+- Assets/AnimationTexture/3D_BoxRaccoon_ANIM.bytes
+- Assets/AnimationTexture/3D_MobBat_ANIM.bytes
+- Assets/AnimationTexture/3D_MobKnight_ANIM.bytes
+- Assets/AnimationTexture/3D_MobPinata_ANIM.bytes
+- Assets/AnimationTexture/3D_MobBlob_ANIM.bytes
+- Assets/AnimationTexture/3D_MobBear_ANIM.bytes
+- Assets/AnimationTexture/3D_MobPaperbag_ANIM.bytes
+- Assets/AnimationTexture/3D_MobSoldat_5Bones356Polys.bytes
+- Assets/AnimationTexture/3D_MobNormie_ANIM.bytes
+- Assets/AnimationTexture/3D_ChampionGreatNormie_ANIM.bytes
+- Assets/AnimationTexture/3D_MobCaveman_ANIM.bytes
+- Assets/AnimationTexture/3D_MobAlien_ANIM.bytes
+- Assets/AnimationTexture/3D_MobRaccoon_ANIM.bytes
+- Assets/AnimationTexture/3D_MobSoldier_ANIM.bytes
+- Assets/AnimationTexture/3D_MobChicken_ANIM.bytes
+- Assets/AnimationTexture/3D_MobBug_ANIM.bytes
+- Assets/AnimationTexture/3D_CHA_Mob_Squid_MESH.bytes
+Dependencies: []

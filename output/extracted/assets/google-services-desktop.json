@@ -1,170 +1,42 @@
 {
   "project_info": {
-    "project_number": "851427962011",
-    "firebase_url": "https://lost-in-blue-survive-islan-278.firebaseio.com",
-    "project_id": "lost-in-blue-survive-islan-278",
-    "storage_bucket": "lost-in-blue-survive-islan-278.appspot.com"
+    "project_number": "211503657510",
+    "firebase_url": "https://mob-control-default-rtdb.firebaseio.com",
+    "project_id": "mob-control",
+    "storage_bucket": "mob-control.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:851427962011:android:48654ec77c046b4397aa3e",
+        "mobilesdk_app_id": "1:211503657510:android:1b8f7edde517aeab37ece7",
         "android_client_info": {
-          "package_name": "com.volcanoforce.lost"
+          "package_name": "com.vincentb.MobControl"
         }
       },
       "oauth_client": [
         {
-          "client_id": "851427962011-bh1f74spdq0fc6q0ofq94ef2crusmkh9.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.volcanoforce.lost",
-            "certificate_hash": "60f78a3906abbf37d5cda7995a891798cde60587"
-          }
-        },
-        {
-          "client_id": "851427962011-glh5s2dtn0n5gqqbigig77iliase309h.apps.googleusercontent.com",
+          "client_id": "211503657510-13u6fvamcak4n8u0fn8ojblmu68cjapa.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC0bIo1ZFSXkzSk75I8N58DXYA9QnBBWwA"
+          "current_key": "AIzaSyCLieJwx9YsKsDmz78Z1u_qPshC21kSdBQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "851427962011-glh5s2dtn0n5gqqbigig77iliase309h.apps.googleusercontent.com",
+              "client_id": "211503657510-13u6fvamcak4n8u0fn8ojblmu68cjapa.apps.googleusercontent.com",
               "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:851427962011:android:904c826d14b69b8d97aa3e",
-        "android_client_info": {
-          "package_name": "com.volcanoforce.lost.beta"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "851427962011-5vkq6n6ff14jqnkjd716iv0rat2up8qa.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.volcanoforce.lost.beta",
-            "certificate_hash": "1ab81328f478df8b04b0624157fbef015523945f"
-          }
-        },
-        {
-          "client_id": "851427962011-ff0v7aqtjcpbf97v14ar06776p3vn30q.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.volcanoforce.lost.beta",
-            "certificate_hash": "b529909e328327abf96b023e00627c1a874d5abe"
-          }
-        },
-        {
-          "client_id": "851427962011-glh5s2dtn0n5gqqbigig77iliase309h.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyC0bIo1ZFSXkzSk75I8N58DXYA9QnBBWwA"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
+            },
             {
-              "client_id": "851427962011-glh5s2dtn0n5gqqbigig77iliase309h.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:851427962011:android:1b435c2e9df7f92d97aa3e",
-        "android_client_info": {
-          "package_name": "com.volcanoforce.lost.global"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "851427962011-pcnbtkucce3pifss82ib8tdspknst54l.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.volcanoforce.lost.global",
-            "certificate_hash": "b7f50621baf91f5914f24161bc83b915b9d97757"
-          }
-        },
-        {
-          "client_id": "851427962011-sos03ho3j93tau8c1800iumd3b8sheh8.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.volcanoforce.lost.global",
-            "certificate_hash": "072baff5309b940ce794b1d724a8d0402bf211b0"
-          }
-        },
-        {
-          "client_id": "851427962011-glh5s2dtn0n5gqqbigig77iliase309h.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyC0bIo1ZFSXkzSk75I8N58DXYA9QnBBWwA"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "851427962011-glh5s2dtn0n5gqqbigig77iliase309h.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:851427962011:android:b043f6e1ab9ffffa97aa3e",
-        "android_client_info": {
-          "package_name": "com.volcanoforce.lost.ptr"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "851427962011-b742imj68e8gl2b56qa0bp93lost3e0o.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.volcanoforce.lost.ptr",
-            "certificate_hash": "60f78a3906abbf37d5cda7995a891798cde60587"
-          }
-        },
-        {
-          "client_id": "851427962011-glh5s2dtn0n5gqqbigig77iliase309h.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyC0bIo1ZFSXkzSk75I8N58DXYA9QnBBWwA"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "851427962011-glh5s2dtn0n5gqqbigig77iliase309h.apps.googleusercontent.com",
-              "client_type": 3
+              "client_id": "211503657510-gilveeq5arqpk9qqguu4cfri4685g9sc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.vincentb.MobControl"
+              }
             }
           ]
         }
